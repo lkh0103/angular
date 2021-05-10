@@ -1,0 +1,67 @@
+<!-- <h1>{{ title }}</h1> -->
+<!-- <app-header></app-header> -->
+<!-- <form action="">
+    <input type="text" #s>
+    &nbsp;
+    <button type="button" (click)="search(s)">
+        Tìm kiếm</button>
+</form>
+
+<span *ngIf="title=='Search' else notitle">
+    hello
+</span>
+
+<ng-template #notitle>
+    Goodbye
+</ng-template>
+
+<div [ngSwitch]="title">
+    <h3 *ngSwitchCase="'Search'">Search</h3>
+    <h3 *ngSwitchCase="'Timkiem'">Tìm Kiếm</h3>
+    <h3 *ngSwitchCase="'Hello'">Hello</h3>
+</div>
+
+<ul>
+    <li *ngFor="let i of arr">{{ i }}</li>
+</ul>
+
+<p>
+    <ngb-alert [dismissible]="false">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </ngb-alert>
+</p> -->
+
+<!-- gọi đến component header -->
+<!-- <app-header [title]="title"></app-header> -->
+
+<!-- gọi đến component footer -->
+<!-- <app-footer (calltoParents)="parent($event)"></app-footer> -->
+
+<!-- load header -->
+<app-header></app-header>
+
+<!-- load menu -->
+<app-menu></app-menu>
+
+<!-- sidebar and main -->
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-3">
+            <!-- sidebar -->
+            <app-sidebar></app-sidebar>
+        </div>
+
+        <div class="col-md-9">
+            <!-- main -->
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+</div>
+
+<!-- load footer -->
+<app-footer></app-footer>
+
+<!-- load chat -->
+<app-chat></app-chat>

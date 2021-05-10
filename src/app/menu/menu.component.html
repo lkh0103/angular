@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navb">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" *ngFor="let i of menuTop">
+                <a class="nav-link" routerLink="{{i.link}}">{{i.name}}</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <div class="input-group mr-sm-2">
+                <input type="text" class="form-control" placeholder="Nhập từ khóa" #s>
+                <div class="input-group-append">
+                  <button class="btn" type="button" (click)="search(s)">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</nav>

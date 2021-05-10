@@ -1,0 +1,58 @@
+<ul class="breadcrumb">
+    <li class="breadcrumb-item">
+        <i class="fa fa-home"></i><a routerLink="/"> Trang Chủ</a>
+    </li>
+    <li class="breadcrumb-item">
+        <a routerLink="/danh-muc/{{id_category}}">{{name_category}}</a></li>
+    <li class="breadcrumb-item active">{{name_product}}</li>
+</ul>
+
+<div class="title_home">
+    <span class="t1">{{name_product}}</span>
+    <span class="t2" style="color: #bdbdbd;">
+        Lượt xem: <b style="color: #fbca00;">15</b>
+    </span>
+</div>
+
+<div class="main_product">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="assets/img/sp5.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-7">
+            <div class="single-product-content">
+                <h3>{{name_product}}</h3>
+                <p class="single-product-pricing"><span>Giá:</span> {{price_product | number: '1.0-0'}} vnđ</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.</p>
+                <div class="single-product-form">
+                    <form action="index.html">
+                        <input type="number" placeholder="Số lượng" value="1">
+                    </form>
+                    <a href="cart.html" class="cart-btn">
+                        <i class="fa fa-shopping-cart"></i> Thêm vào giỏ</a>
+                    <p><strong>Danh mục: </strong>{{name_category}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="title_home">
+    <span class="t1">Sản phẩm liên quan</span>
+    <span class="t2">
+        <a routerLink="/danh-muc/{{id_category}}">Xem tin cùng chủ đề</a>
+    </span>
+</div>
+
+<div class="home-product">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let i of info_product_relative">
+            <div class="product">
+                <a routerLink="/san-pham/{{i._id}}">
+                    <img src="assets/img/sp3.jpg" class="img-fluid">
+                    <h3>{{i.name}}</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

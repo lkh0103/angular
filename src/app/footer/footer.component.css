@@ -1,0 +1,64 @@
+footer{
+    background: #222326;
+    padding-top: 40px;
+    color: white;
+}
+footer .title, footer .title-2{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+footer .title{
+    font-size: 30px;
+}
+footer .title-2{
+    font-size: 25px;
+}
+footer p{
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: justify;
+}
+/* network */
+footer .network{
+    padding: 20px 0;
+}
+footer .network a{
+    color: white;
+    text-decoration: none;
+}
+footer .network a i{
+    font-size: 20px;
+    margin-right: 25px;
+}
+footer .network a:hover i{
+    color: #3b84b0;
+}
+/* site map */
+footer .sitemap{
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none;
+    line-height: 35px;
+}
+footer .sitemap li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+footer .sitemap li a:hover{
+    color: #3b84b0;
+}
+footer .sitemap li a::before{
+    content: '•';
+    font-size: 20px;
+    color: #fbca00;
+    margin-right: 10px;
+}
+/* copy right */
+.copy-right{
+    background: #1a1c1f;
+    color: white;
+    font-size: 14px;
+    padding: 25px;
+}

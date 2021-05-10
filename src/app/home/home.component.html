@@ -1,0 +1,92 @@
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="assets/img/banner1.jpg" style="cursor:pointer" width="900" height="400">
+      </div>
+      <div class="carousel-caption">
+        <h3>Bánh Crep Trái Cây</h3>
+        <p>Hương Vị Táo, Cam...</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="assets/img/banner2.jpg" style="cursor:pointer" width="900" height="400">
+      </div>
+      <div class="carousel-caption">
+        <h3>Bánh Bông Lan</h3>
+        <p>Hương Vị Trứng Muối</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="assets/img/banner3.jpg" style="cursor:pointer" width="900" height="400">
+      </div>
+      <div class="carousel-caption">
+        <h3>Bánh Su Kem</h3>
+        <p>Hương Vị Socola, Táo</p>
+      </div>
+    </ng-template>
+</ngb-carousel>
+<br>
+<!-- <div class="content">
+    <h1>Công ty TNHH TM - DV Mạnh Cường</h1>
+    <p>
+        Chiều 31/3, Thường trực Chính phủ xem xét tình hình phát triển kinh tế - xã hội
+         cả nước <a href="">trong quý I</a> năm 2021. Theo Thủ tướng, quý I đóng vai trò quan trọng
+          trong định hướng phát triển đất nước cả năm.
+    </p>
+    <p>
+        Trong quý I, <a href="">tăng trưởng kinh tế</a> của nước ta đạt 4,48%. Số doanh nghiệp 
+        thành lập mới tăng 30.000, tăng 27,5% vốn đăng ký. Thu, chi ngân sách 
+        Nhà nước đạt kết quả tích cực (thu ngân sách bằng 23,8% dự toán).
+    </p>
+    <p>
+        <span class="c1">Bên cạnh đó, hoạt động xuất, nhập khẩu</span> đã dần phục hồi. Tổng kim ngạch 
+        xuất nhập khẩu ước đạt <span class="c2">152,7 tỷ USD</span>, tăng 24,1%, xuất siêu trên 2 tỷ USD.
+    </p>
+</div> -->
+
+<div class="title_home">
+    <span class="t1">SẢN PHẨM MỚI</span>
+    <span class="t2">
+        <a href="">Xem tất cả</a>
+    </span>
+</div>
+
+<div class="home-product">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let i of infoproduct">
+            <div class="product">
+                <a routerLink="/san-pham/{{i._id}}">
+                    <img src="assets/img/sp2.jpg" class="img-fluid">
+                    <h3>{{i.name}}</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="col-sm-4">
+  <div class="single-item">
+                      <div class="ribbon-wrapper">
+  <div class="ribbon sale">Sale</div>
+  </div>
+                              <div class="single-item-header">
+    <a href="http://localhost/public/chi-tiet/1">
+      <img src="http://localhost/public/source/image/product/1430967449-pancake-sau-rieng-6.jpg" height="250px" alt="">
+    </a>
+  </div>
+  <div class="single-item-body">
+    <p class="single-item-title">Bánh Crepe Sầu riêng</p>
+    <p class="single-item-price" style="font-size: 14px">
+                                  <span class="flash-del">150,000 đồng</span>
+      <span class="flash-sale">120,000 đồng</span>
+                                </p>
+  </div>
+  <div class="single-item-caption">
+    <a class="add-to-cart pull-left" href="http://localhost/public/add-to-cart/1"><i class="fa fa-shopping-cart"></i></a>
+    <a class="beta-btn primary" href="http://localhost/public/chi-tiet/1">Chi Tiết<i class="fa fa-chevron-right"></i></a>
+    <div class="clearfix"></div><br>
+  </div>
+</div>
+</div> -->

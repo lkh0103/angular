@@ -1,0 +1,51 @@
+<div class="title">
+    <i class="fa fa-bars"></i>
+    <span>Danh mục sản phẩm</span>
+</div>
+
+<div class="category">
+    <ul>
+        <li *ngFor="let i of sidebar">
+            <span *ngIf="i.parents==''">
+                <a routerLink="/danh-muc/{{i._id}}">{{i.name}}</a>
+            </span>
+            <ul class="sub-menu">
+                <li *ngFor="let j of i.childs">
+                    <a routerLink="/danh-muc/{{j._id}}">{{j.name}}</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="title">
+    <i class="fa fa-bars"></i>
+    <span>Sản phẩm bán chạy</span>
+</div>
+
+<div class="best-seller">
+    <div class="product">
+        <a href="">
+            <img src="/assets/img/spbc/crepesaurieng.jpg" class="img-fluid">
+            <h4>Bánh Crepe Sầu Riêng</h4>
+        </a>
+    </div>
+    <div class="product">
+        <a href="">
+            <img src="/assets/img/spbc/bonglantrungmuoi.jpg" class="img-fluid">
+            <h4>Bánh Bông Lan Trưng Muối</h4>
+        </a>
+    </div>
+    <div class="product">
+        <a href="">
+            <img src="/assets/img/spbc/banhkemdau.jpg" class="img-fluid">
+            <h4>Bánh Kem Dâu</h4>
+        </a>
+    </div>
+    <div class="product m-b-0">
+        <a href="">
+            <img src="/assets/img/spbc/pizza.jpg" class="img-fluid">
+            <h4>Bánh PIZZA</h4>
+        </a>
+    </div>
+</div>

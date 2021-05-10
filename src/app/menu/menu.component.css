@@ -1,0 +1,26 @@
+nav{
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    padding: 15px 20px;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
+    background: #696969;
+}
+nav form input{
+    border: 1px solid white;
+}
+nav form input:focus, nav form button:focus{
+    box-shadow:none
+}
+nav form button{
+    background: white;
+}
+nav form button:hover{
+    background: #3b84b0;
+    color: white;
+}

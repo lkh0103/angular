@@ -1,0 +1,19 @@
+.content h1{
+    font-size: 30px;
+    color: #fe2121;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.content p{
+    font-size: 15px;
+    color: #464a50;
+}
+.content .c1, .content .c2{
+    color: #fe2121;
+}
+.carousel-caption{
+    color: rgb(15, 15, 15);
+    font-size: 12px;
+}
